@@ -1,0 +1,24 @@
+{
+  "name": "overlabs-filmes-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de filmes do desafio técnico Overlabs",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.ts",
+    "start": "node src/server.ts",
+    "test": "node --test --experimental-test-isolation=none test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fastify": "5.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "typescript": "5.9.3"
+  }
+}
